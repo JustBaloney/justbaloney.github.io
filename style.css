@@ -1,0 +1,500 @@
+/*@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wdth,wght@0,6..12,80,200..1000;1,6..12,100,200..1000&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+
+/* css resets */
+html, body, main, section, article, h1, h2, h3, p, img {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* styling */
+
+/* generic elements */
+
+body {
+  font-family: "Urbanist", sans-serif;
+/*   font-family: "EB Garamond", serif;*/
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+/*  font-variation-settings: "wdth" <width>, "YTLC" 500;*/
+/*  font-size: 1rem;*/
+  color: #14172f;
+  line-height: 1.5;
+  font-variation-settings:
+    "wdth" 80,
+    "YTLC" 500;
+}
+
+header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdece;
+  width: 100%;
+/*
+  position: fixed;
+  z-index: 1;
+*/
+}
+
+.icon{
+    margin: 1rem;
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  column-gap: 20px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015rem;
+/*    font-style: italic;*/
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+li, p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+article {
+    display:block;
+    column-gap: 2rem;
+    margin: 3rem 0rem;
+}
+
+/*
+img {
+  border-radius: 1rem;
+}
+*/
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+
+/* content sections */
+
+.background{
+  width:100%;
+}
+
+/*
+.bold{
+  font-weight: 600;
+}
+*/
+
+.light{
+  background-color: #ffdece;
+}
+
+.dark{
+  background-color: #101520;
+}
+
+.subdued{
+/*    color: #9b9ca2;*/
+    opacity: 60%;
+}
+
+.smallcaps{
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.view{
+  min-height: 65vh;
+  background-image: url();
+  display: flex;
+}
+
+#intro {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  border-radius: 16px;
+/*  row-gap: 2rem;*/
+}
+
+.intro-text{
+    display: grid;
+    grid-row-gap: 1.25em;
+    margin: 2rem 0;
+}
+
+#intro img {
+      width: 80%;
+      max-height: auto;
+      margin: 1rem auto;
+    }
+
+.socials li{
+  font-size: 1rem;
+  display: inline;
+  width: 40px;
+  margin-right: 20px;
+  color: #000;
+}
+
+.socials a, a:visited{
+  color: #000;
+}
+
+#story {
+  /* background-color: #f9f9f9; */
+  display: grid;
+  row-gap: 0rem;
+  margin: 4rem auto;
+  /* padding: 2rem 3rem 2rem 3rem; */
+}
+
+#story img {
+      width: 100%;
+      max-height: auto;
+    }
+
+.top {
+  position: absolute;
+  z-index: 2;
+  margin-left: 10rem;
+  margin-top: 10rem;
+}
+
+.bottom {
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.description{
+  display: grid;
+  grid-row-gap: 0.5rem;
+  line-height: 1.8;
+  margin: 1rem 0rem;
+}
+
+#writing {
+  display: grid;
+  grid-row-gap: 2rem;
+  margin: 2rem auto;
+  padding: 4rem 3rem 4rem 3rem;
+}
+
+#contact {
+  display: grid;
+  grid-row-gap: 2rem;
+  color: #fff;
+  margin: 4rem auto 4rem auto;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#footer p {
+  font-size: 0.8rem;
+  color: #acacac;
+  margin: 4rem auto;
+}
+
+
+
+
+/* //////////// media queries /////////////// */
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen
+and (min-width : 1224px) {
+
+/* Styles */
+
+    h1{
+      font-size: 3rem;
+      font-weight: 600;
+/*      letter-spacing: -0.1rem;*/
+    } 
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+    
+    article {
+        display: grid;
+        grid-auto-rows: 1fr;
+        column-gap: 4rem;
+    }
+    
+    .img-right {
+        grid-template-columns: 3fr 2fr;
+    }
+    
+    .img-left {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    #intro {
+      margin: 8rem auto;
+/*
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 6rem;
+*/
+      align-items: center;
+    }
+
+    #intro img{
+      width: 100%;
+      max-height: auto;
+        margin: 0 auto;
+    }
+
+    #story {
+      grid-row-gap: 4rem;
+      margin: 4rem auto;
+      padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    .description{
+        display: grid;
+        grid-row-gap: 0.5rem;
+    }
+
+    #contact {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+  }
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+/* Styles */
+}
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+/* Styles */
+}
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+/* Styles */
+}
+
+
+
+
+/* Large screens ----------- */
+
+@media only screen
+and (min-width : 1824px) {
+
+/* Styles */
+
+header{
+        height: 12rem;
+}
+    
+ h1{
+    font-size: 5rem;
+    font-weight: 600;
+} 
+    
+h2{
+    font-size: 2rem;
+}
+    
+ h3 {
+    font-size: 1.5rem;
+ }
+    
+p {
+    font-size: 1.2rem;
+}
+
+
+ section{
+    width: 50%;
+}
+   
+    
+ article {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 4rem;
+    }
+
+  .view{
+  min-height: 70vh;
+  background-image: url();
+  display: flex;
+}
+
+    #intro {
+      margin: 8rem auto;
+/*
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 6rem;
+*/
+    }
+
+    #intro img{
+      width: 100%;
+      max-height: auto;
+        margin: 0 auto;
+    }
+
+    .intro-text{
+      display: grid;
+      grid-row-gap: 2rem;
+      margin: 2rem 0;
+      align-content: baseline;
+    }
+    
+    .socials li{
+    font-size: 1.2rem;
+    }
+
+    #story {
+      grid-row-gap: 4rem;
+      margin: 4rem auto;
+      padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    .description{
+        display: grid;
+/*        grid-row-gap: 1.4rem;*/
+        align-content: baseline;
+    }
+
+    #contact {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      padding: 0;
+    }
+
+}
+
+
