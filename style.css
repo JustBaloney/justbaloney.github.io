@@ -89,7 +89,7 @@ main {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.015rem;
@@ -109,7 +109,7 @@ h3 {
 
 li, p {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
