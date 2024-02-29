@@ -230,6 +230,10 @@ hr {
   margin: 1rem 0rem;
 }
 
+.description p{
+  margin: 1rem auto;	  
+}
+
 #writing {
   display: grid;
   grid-row-gap: 2rem;
