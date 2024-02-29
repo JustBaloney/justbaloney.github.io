@@ -5,6 +5,7 @@
 
 
 /* css resets */
+
 body, html { 
     overflow-x:hidden; 
 }
@@ -16,7 +17,7 @@ html, body, main, section, article, h1, h2, h3, p, img {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-        text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
 }
 
 article, aside, details, figcaption, figure,
@@ -93,20 +94,23 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0.5rem 0rem;
 }
 
 h3 {
   font-size: 1.25rem;
   line-height: 1.25;
+  margin: 0.5rem 0rem;
 }
 
 li, p {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
+  margin: 0.25rem 0rem;
 }
 
 article {
@@ -144,11 +148,6 @@ hr {
   width:100%;
 }
 
-/*
-.bold{
-  font-weight: 600;
-}
-*/
 
 .light{
   background-color: #ffdece;
@@ -218,31 +217,20 @@ hr {
       max-height: auto;
     }
 
-.top {
-  position: absolute;
-  z-index: 2;
-  margin-left: 10rem;
-  margin-top: 10rem;
-}
-
-.bottom {
-  z-index: 1;
-}
-
 .description{
   line-height: 1.8;
   margin: 1rem 0rem;
 }
 
 .description p{
-  margin: 1rem auto;	  
+    margin: 1rem auto;
 }
 
 #writing {
   display: grid;
   grid-row-gap: 2rem;
-  margin: 2rem auto;
-  padding: 4rem 3rem 4rem 3rem;
+  margin: 4rem auto;
+/*  padding: 4rem 3rem 4rem 3rem;*/
 }
 
 #contact {
@@ -251,6 +239,12 @@ hr {
   color: #fff;
   margin: 4rem auto 4rem auto;
 }
+
+#contact li, a{
+    color: #acacac;
+    text-decoration: none;
+}
+
 
 .reveal{
   position: relative;
@@ -263,6 +257,7 @@ hr {
   transform: translateY(0);
   opacity: 1;
 }
+
 
 #footer p {
   font-size: 0.8rem;
@@ -297,7 +292,7 @@ and (min-width : 1224px) {
 
     h1{
       font-size: 3rem;
-      font-weight: 600;
+      font-weight: 800;
     } 
     
     h2{
@@ -401,7 +396,7 @@ header{
     
  h1{
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 800;
 } 
     
 h2{
