@@ -5,6 +5,10 @@
 
 
 /* css resets */
+body, html { 
+    overflow-x:hidden; 
+}
+
 html, body, main, section, article, h1, h2, h3, p, img {
     margin: 0;
 	padding: 0;
@@ -12,7 +16,7 @@ html, body, main, section, article, h1, h2, h3, p, img {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    text-rendering: optimizeLegibility;
+        text-rendering: optimizeLegibility;
 }
 
 article, aside, details, figcaption, figure,
