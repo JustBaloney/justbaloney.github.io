@@ -38,6 +38,7 @@ ol, ul, li {
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -66,6 +67,11 @@ body {
     "YTLC" 500;
 }
 
+main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 header {
   height: 8rem;
   display: flex;
@@ -77,13 +83,6 @@ header {
 
 .icon{
     margin: 1rem;
-}
-
-main {
-  max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  column-gap: 20px;
 }
 
 h1 {
@@ -113,21 +112,20 @@ li, p {
   margin: 0.25rem 0rem;
 }
 
-article {
-    display:block;
-    column-gap: 2rem;
-    margin: 3rem 0rem;
-}
+  article {
+    display:flex;
+    flex-wrap:wrap;
+    margin: 4em auto;
+    }
 
-/*
-img {
-  border-radius: 1rem;
-}
-*/
 
 section {
-  width: 90%;
-  margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width: 60%;
+    justify-content: center;
 }
 
 hr {
@@ -170,29 +168,21 @@ hr {
 }
 
 .view{
-  min-height: 65vh;
+  min-height: 55vh;
   background-image: url();
   display: flex;
 }
 
-#intro {
-  display: grid;
-  margin: auto;
-  justify-content: center;
-  border-radius: 16px;
+
+.intro{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    max-width: 90%;
+    justify-content: center;
 }
 
-.intro-text{
-    display: grid;
-    grid-row-gap: 1.25em;
-    margin: 2rem 0;
-}
-
-#intro img {
-      width: 80%;
-      max-height: auto;
-      margin: 1rem auto;
-    }
 
 .socials li{
   font-size: 1rem;
@@ -206,18 +196,20 @@ hr {
   color: #000;
 }
 
-#story {
-  display: grid;
+.experience {
+  display: flex;
+  flex-direction: column;
   row-gap: 0rem;
   margin: 4rem auto;
+    max-width: 90%;
 }
 
-#story img {
-      width: 100%;
-      max-height: auto;
-    }
+article img{
+    max-width: 100%;
+}
 
-.description{
+article .description{
+  max-width: 100%;
   line-height: 1.8;
   margin: 1rem 0rem;
 }
@@ -227,22 +219,27 @@ hr {
 }
 
 #writing {
-  display: grid;
-  grid-row-gap: 2rem;
-  margin: 4rem auto;
-/*  padding: 4rem 3rem 4rem 3rem;*/
+  display: flex;
+  padding: 4rem 0rem;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  max-width: 90%;
+  justify-content: center;
 }
 
 #contact {
-  display: grid;
-  grid-row-gap: 2rem;
+  display: flex;
+  padding: 4rem 0rem;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  max-width: 90%;
+  justify-content: center;
   color: #fff;
-  margin: 4rem auto 4rem auto;
 }
 
 #contact li, a{
     color: #acacac;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
@@ -262,7 +259,7 @@ hr {
 #footer p {
   font-size: 0.8rem;
   color: #acacac;
-  margin: 4rem auto;
+  padding: 2rem 0rem;
 }
 
 
@@ -303,42 +300,33 @@ and (min-width : 1224px) {
         font-size: 1.2rem;
     }
     
-    article {
-        display: grid;
-        grid-auto-rows: 1fr;
-        column-gap: 4rem;
+    .intro{
+        max-width: 60%;
     }
     
-    .img-right {
-        grid-template-columns: 3fr 2fr;
+    .experience{
+     max-width: 60%;
     }
     
-    .img-left {
-        grid-template-columns: 2fr 3fr;
-    }
-
-    #intro {
-      margin: 8rem auto;
-      align-items: center;
-    }
-
-    #intro img{
-      width: 100%;
-      max-height: auto;
-        margin: 0 auto;
-    }
-
-    #story {
-      grid-row-gap: 4rem;
-      margin: 4rem auto;
-      padding: 2rem 1rem 2rem 1rem;
+    .img-right{
+        display:flex;
+        flex-direction: row;
+        row-gap:2rem;
     }
     
-
-    #contact {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      padding: 0;
+    .img-left{
+        display:flex;
+        flex-direction: row-reverse;
+        row-gap:2rem;
+    } 
+    
+    article img{
+        max-width: 60%;
+    }
+    
+    article .description{
+        max-width: 35%;
+    padding: 0rem 2rem;
     }
 
     nav ul {
@@ -416,52 +404,27 @@ p {
     width: 50%;
 }
    
-    
- article {
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 4rem;
-    }
 
   .view{
   min-height: 70vh;
   background-image: url();
-  display: flex;
 }
 
     #intro {
       margin: 8rem auto;
-    }
-
-    #intro img{
-      width: 100%;
-      max-height: auto;
+      display: flex;
         margin: 0 auto;
+        flex-direction: column;
+    row-gap: 1.5rem;
+    max-width: 60%;
+    justify-content: center;
     }
 
-    .intro-text{
-      display: grid;
-      grid-row-gap: 2rem;
-      margin: 2rem 0;
-      align-content: baseline;
-    }
-    
+
     .socials li{
     font-size: 1.2rem;
     }
 
-    #story {
-      grid-row-gap: 4rem;
-      margin: 4rem auto;
-      padding: 2rem 1rem 2rem 1rem;
-    }
-    
-    #contact {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      padding: 0;
-    }
 
 }
 
