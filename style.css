@@ -81,10 +81,6 @@ header {
   padding-left: 5%;
 }
 
-.icon{
-    margin: 1rem;
-}
-
 h1 {
   font-size: 3.25rem;
   font-weight: 600;
@@ -127,16 +123,6 @@ section {
     max-width: 60%;
     justify-content: center;
 }
-
-hr {
-    display: block;
-    height: 2px;
-    border: 0;
-    border-top: 1px solid #000;
-    margin: 1em 0;
-    padding: 0;
-}
-
 
 
 
