@@ -51,12 +51,9 @@ table {
 
 body {
   font-family: "Urbanist", sans-serif;
-/*   font-family: "EB Garamond", serif;*/
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-/*  font-variation-settings: "wdth" <width>, "YTLC" 500;*/
-/*  font-size: 1rem;*/
   color: #14172f;
   line-height: 1.5;
   font-variation-settings:
@@ -68,13 +65,9 @@ header {
   height: 8rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #ffdece;
   width: 100%;
-/*
-  position: fixed;
-  z-index: 1;
-*/
+  padding-left: 5%;
 }
 
 .icon{
@@ -89,16 +82,15 @@ main {
 }
 
 h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
+  font-size: 3.25rem;
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.015rem;
-/*    font-style: italic;*/
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
 }
 
@@ -111,7 +103,6 @@ li, p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-weight: 400;
 }
 
 article {
@@ -164,7 +155,6 @@ hr {
 }
 
 .subdued{
-/*    color: #9b9ca2;*/
     opacity: 60%;
 }
 
@@ -187,7 +177,6 @@ hr {
   margin: auto;
   justify-content: center;
   border-radius: 16px;
-/*  row-gap: 2rem;*/
 }
 
 .intro-text{
@@ -215,11 +204,9 @@ hr {
 }
 
 #story {
-  /* background-color: #f9f9f9; */
   display: grid;
   row-gap: 0rem;
   margin: 4rem auto;
-  /* padding: 2rem 3rem 2rem 3rem; */
 }
 
 #story img {
@@ -235,13 +222,10 @@ hr {
 }
 
 .bottom {
-  /* position: absolute; */
   z-index: 1;
 }
 
 .description{
-  display: grid;
-  grid-row-gap: 0.5rem;
   line-height: 1.8;
   margin: 1rem 0rem;
 }
@@ -250,6 +234,7 @@ hr {
   display: grid;
   grid-row-gap: 2rem;
   margin: 2rem auto;
+  padding: 4rem 3rem 4rem 3rem;
 }
 
 #contact {
@@ -289,7 +274,8 @@ hr {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-/* Styles */
+
+/* Styling */
 
 }
 
@@ -299,12 +285,11 @@ and (max-device-width : 480px) {
 @media only screen
 and (min-width : 1224px) {
 
-/* Styles */
+/* Styling */
 
     h1{
       font-size: 3rem;
       font-weight: 600;
-/*      letter-spacing: -0.1rem;*/
     } 
     
     h2{
@@ -331,11 +316,6 @@ and (min-width : 1224px) {
 
     #intro {
       margin: 8rem auto;
-/*
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 6rem;
-*/
       align-items: center;
     }
 
@@ -351,10 +331,6 @@ and (min-width : 1224px) {
       padding: 2rem 1rem 2rem 1rem;
     }
     
-    .description{
-        display: grid;
-        grid-row-gap: 0.5rem;
-    }
 
     #contact {
       display: grid;
@@ -387,7 +363,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
 
-/* Styles */
+/* Styling */
 }
 
 
@@ -398,7 +374,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
 
-/* Styles */
+/* Styling */
 }
 
 
@@ -453,11 +429,6 @@ p {
 
     #intro {
       margin: 8rem auto;
-/*
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 6rem;
-*/
     }
 
     #intro img{
@@ -483,12 +454,6 @@ p {
       padding: 2rem 1rem 2rem 1rem;
     }
     
-    .description{
-        display: grid;
-/*        grid-row-gap: 1.4rem;*/
-        align-content: baseline;
-    }
-
     #contact {
       display: grid;
       grid-template-columns: 2fr 1fr;
