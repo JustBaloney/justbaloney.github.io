@@ -45,6 +45,10 @@ q:before, q:after {
 	content: none;
 }
 
+a:visited {
+    color: #14172f;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -206,12 +210,12 @@ hr {
 .socials li{
   display: inline;
   font-size: 0.8rem;
-  color: #000;
+  color: #14172f;
   margin-right: 1rem;
 }
 
 .socials a, a:visited{
-  color: #000;
+  color: #14172f;
 }
 
 .experience {
