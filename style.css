@@ -60,7 +60,7 @@ table {
 /* generic elements */
 
 body {
-  font-family: serif;
+  font-family: "urbanist", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -153,7 +153,7 @@ hr {
 }
 
 .dark{
-  background-color: #101520;
+  background-color: #14172f;
 }
 
 
@@ -330,7 +330,7 @@ and (min-width : 1224px) {
     } 
     
     h2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     p {
@@ -358,12 +358,12 @@ and (min-width : 1224px) {
     } 
     
     article img{
-        max-width: 60%;
+        max-width: 54%;
     }
     
     article .description{
-        max-width: 35%;
-    padding: 0rem 2rem;
+        max-width: 36%;
+    padding: 0rem 3rem;
     }
 
     nav ul {
@@ -429,7 +429,7 @@ header{
 } 
     
 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
     
  h3 {
