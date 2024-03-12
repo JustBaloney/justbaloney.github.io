@@ -1,9 +1,9 @@
-/*@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wdth,wght@0,6..12,80,200..1000;1,6..12,100,200..1000&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap');
 
 
-/* css resets */
+
+/*----------- css resets -----------*/
 
 body, html { 
     overflow-x:hidden; 
@@ -54,12 +54,15 @@ table {
 }
 
 
-/* styling */
 
-/* generic elements */
+
+/*----------- css styles -----------*/
+
+
+/* generic elements -----------*/
 
 body {
-  font-family:  "Urbanist", sans-serif;
+  font-family:  "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -135,7 +138,7 @@ hr {
 }
 
 
-/* content sections */
+/* content sections -----------*/
 
 
 .background-light{
@@ -172,6 +175,12 @@ hr {
   display: flex;
   flex-direction: column;
     justify-content: center;
+    background-color: #c4ffff;
+/*
+    background-image: url(img/bg.png);
+      background-size: 100%;
+    background-attachment: fixed;
+*/
 }
 
 
@@ -183,12 +192,6 @@ hr {
     max-width: 90%;
     justify-content: center;
     align-items: start;
-/*
-          background-image: url("img/Frame.png");
-    background-position: center; 
-  background-repeat: no-repeat;
-  background-size: 30%; 
-*/
 }
 
 
@@ -300,9 +303,7 @@ article .description{
 
 
 
-
-/* //////////// media queries /////////////// */
-
+/*----------- Media Queries -----------*/
 
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -453,12 +454,16 @@ li, p {
 
   .view{
   min-height: 80vh;
-  background-image: url();
+  background-color: #c4ffff;
+/*
+    background-image: url(img/bg.png);
+      background-size: 100%;
+    background-attachment: fixed;
+*/
 }
 
     #intro {
     row-gap: 1.5rem;
-/*    max-width: 60%;*/
     justify-content: center;
     align-items: start;
     }
