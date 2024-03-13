@@ -76,6 +76,7 @@ body {
 main {
   max-width: 100%;
   margin: 0 auto;
+/*    background-color: #0e1020;*/
 }
 
 header {
@@ -175,7 +176,6 @@ hr {
   display: flex;
   flex-direction: column;
     justify-content: center;
-    background-color: #c4ffff;
 /*
     background-image: url(img/bg.png);
       background-size: 100%;
@@ -225,7 +225,8 @@ hr {
   display: flex;
   flex-direction: column;
   row-gap: 0rem;
-  margin: 4rem auto;
+  margin: 0 auto;
+  padding-top: 4rem;
     max-width: 90%;
 }
 
@@ -369,7 +370,7 @@ and (min-width : 1224px) {
     
     article .description{
         max-width: 36%;
-    padding: 0rem 3rem;
+    padding: 0rem 4rem;
     }
 
     nav ul {
@@ -430,7 +431,7 @@ header{
 }
     
  h1{
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 800;
 } 
     
@@ -454,7 +455,6 @@ li, p {
 
   .view{
   min-height: 80vh;
-  background-color: #c4ffff;
 /*
     background-image: url(img/bg.png);
       background-size: 100%;
