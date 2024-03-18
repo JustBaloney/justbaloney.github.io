@@ -363,7 +363,7 @@ and (max-width : 1920px){
 } 
     
 h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
     
  h3 {
@@ -398,12 +398,12 @@ section{
     
  
     article .description{
-        max-width: 38%;
+        max-width: 35%;
         padding: 0rem 4rem;
     }
    
     article img{
-        max-width: 44%;
+        max-width: 48%;
     }
 
     .socials li{
@@ -433,6 +433,18 @@ and (min-width : 1920px)
     
     p {
         font-size: 1.25rem;
+    }
+    
+    .intro{
+/*        margin: 5rem auto;*/
+    }
+    
+    .intro {
+/*
+    row-gap: 1.5rem;
+    justify-content: center;
+    align-items: start;
+*/
     }
     
     .intro-more{
