@@ -375,21 +375,13 @@ li, p {
 }
     
 section{
-    width: 75%;
+    width: 65%;
 }
    
 
   .view{
   min-height: 80vh;
 }
-
-/*
-    .intro {
-    row-gap: 1.5rem;
-    justify-content: center;
-    align-items: start;
-    }
-*/
     
     .intro-more{
     display: flex;
@@ -467,7 +459,7 @@ and (max-width: 2560px)
 
     
     section{
-     max-width: 65%;
+     max-width: 55%;
     }
     
     .img-right{
