@@ -417,7 +417,7 @@ section{
 /* X-Large Screens ----------- */
 
 @media only screen
-and (min-width : 2560px) 
+and (min-width : 1920px) 
 {
 
 /* Styling */
@@ -433,18 +433,6 @@ and (min-width : 2560px)
     
     p {
         font-size: 1.25rem;
-    }
-    
-    .intro{
-/*        margin: 5rem auto;*/
-    }
-    
-    .intro {
-/*
-    row-gap: 1.5rem;
-    justify-content: center;
-    align-items: start;
-*/
     }
     
     .intro-more{
