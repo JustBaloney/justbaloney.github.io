@@ -124,10 +124,10 @@ li, p {
 
 section {
     display: flex;
+    max-width: 90%;
     margin: 0 auto;
     flex-direction: column;
     row-gap: 1.5rem;
-    max-width: 90%;
     justify-content: center;
 }
 
@@ -175,23 +175,12 @@ hr {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-    justify-content: center;
-/*
-    background-image: url(img/bg.png);
-      background-size: 100%;
-    background-attachment: fixed;
-*/
+  justify-content: center;
 }
 
 
 .intro{
-    display: flex;
     margin: 3rem auto;
-    flex-direction: column;
-    row-gap: 1rem;
-    max-width: 90%;
-    justify-content: center;
-    align-items: start;
 }
 
 
@@ -200,7 +189,6 @@ hr {
     padding-bottom: 2rem;
     flex-direction: column;
     row-gap: 1rem;
-    max-width: 90%;
     justify-content: center;
     align-items: start;
 }
@@ -227,11 +215,10 @@ hr {
   row-gap: 0rem;
   margin: 0 auto;
   padding-top: 4rem;
-    max-width: 90%;
 }
 
 article img{
-    max-width: 100%;
+  max-width: 100%;
 }
 
 article .description{
@@ -249,7 +236,6 @@ article .description{
   padding: 6rem 0rem;
   flex-direction: column;
   row-gap: 1.5rem;
-  max-width: 90%;
   justify-content: center;
 }
 
@@ -258,7 +244,6 @@ article .description{
   padding: 4rem 0rem;
   flex-direction: column;
   row-gap: 2.5rem;
-  max-width: 90%;
   justify-content: center;
   color: #fff;
 }
@@ -304,6 +289,12 @@ article .description{
 
 
 
+
+
+
+
+
+
 /*----------- Media Queries -----------*/
 
 
@@ -314,8 +305,12 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
 /* Styling */
-
+    section{
+        max-width: 90%;
+    }
+    
 }
+
 
 
 /* iPads (portrait and landscape) ----------- */
@@ -325,6 +320,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
 /* Styles */
+
 }
 
 
@@ -355,16 +351,13 @@ and (orientation : portrait) {
 /* Large screens ----------- */
 
 @media only screen
-and (min-width : 1024px) {
+and (min-width : 1024px)
+and (max-width : 1920px){
 
 /* Styles */
-
-header{
-        height: 12rem;
-}
     
  h1{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 800;
 } 
     
@@ -380,9 +373,9 @@ li, p {
   font-size: 1.25rem;
     line-height: 1.5;
 }
-
- section{
-    width: 50%;
+    
+section{
+    width: 75%;
 }
    
 
@@ -390,24 +383,34 @@ li, p {
   min-height: 80vh;
 }
 
-    #intro {
+/*
+    .intro {
     row-gap: 1.5rem;
     justify-content: center;
     align-items: start;
     }
-
+*/
+    
     .intro-more{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     }
-    
+
+
     .smallcaps{
     margin-bottom: 2rem;
+        min-width: 15%;
 }
     
-    .intro-more div{
-        width: 80%;
+ 
+    article .description{
+        max-width: 36%;
+        padding: 0rem 4rem;
+    }
+   
+    article img{
+        max-width: 44%;
     }
 
     .socials li{
@@ -421,7 +424,9 @@ li, p {
 /* X-Large Screens ----------- */
 
 @media only screen
-and (min-width : 1224px) {
+and (min-width : 1920px) 
+and (max-width: 2560px)
+{
 
 /* Styling */
 
@@ -439,12 +444,30 @@ and (min-width : 1224px) {
     }
     
     .intro{
-        max-width: 50%;
-        margin: 5rem auto;
+/*        margin: 5rem auto;*/
     }
     
-    .experience{
-     max-width: 50%;
+    .intro {
+/*
+    row-gap: 1.5rem;
+    justify-content: center;
+    align-items: start;
+*/
+    }
+    
+    .intro-more{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    
+    .smallcaps{
+       min-width: 15%;
+    }
+
+    
+    section{
+     max-width: 65%;
     }
     
     .img-right{
@@ -465,8 +488,8 @@ and (min-width : 1224px) {
     }
     
     article img{
-        max-width: 54%;
-    }
+    max-width: 50%;
+}   
     
     article .description{
         max-width: 36%;
@@ -477,10 +500,8 @@ and (min-width : 1224px) {
       display: flex;
       justify-content: space-between;
   }
-    
-    .icon{
-    height: 4rem;
-    }
+
 
 }
+
 
