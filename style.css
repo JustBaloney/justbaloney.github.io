@@ -219,12 +219,13 @@ hr {
 
 article img{
   max-width: 100%;
-  align-self: self-start;
+  align-self: start;
 }
 
 article .description{
   max-width: 100%;
   line-height: 1.8;
+  margin: 1rem 0rem;
 }
 
 .description p{
@@ -357,7 +358,7 @@ and (max-width : 1920px){
 /* Styles */
     
  h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
 } 
     
@@ -370,7 +371,7 @@ h2{
  }
     
 li, p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
     line-height: 1.5;
 }
     
@@ -380,7 +381,7 @@ section{
    
 
   .view{
-  min-height: 80vh;
+  min-height: 100vh;
 }
     
     .intro-more{
@@ -397,13 +398,12 @@ section{
     
  
     article .description{
-        max-width: 36%;
+        max-width: 38%;
         padding: 0rem 4rem;
     }
    
     article img{
         max-width: 44%;
-	align-self: self-start;
     }
 
     .socials li{
@@ -417,8 +417,7 @@ section{
 /* X-Large Screens ----------- */
 
 @media only screen
-and (min-width : 1920px) 
-and (max-width: 2560px)
+and (min-width : 2560px) 
 {
 
 /* Styling */
@@ -482,6 +481,7 @@ and (max-width: 2560px)
     
     article img{
     max-width: 50%;
+    align-self: start;
 }   
     
     article .description{
