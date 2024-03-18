@@ -403,6 +403,7 @@ section{
    
     article img{
         max-width: 44%;
+	align-self: self-start;
     }
 
     .socials li{
