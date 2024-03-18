@@ -219,7 +219,7 @@ hr {
 
 article img{
   max-width: 100%;
-  align-self: center;
+  align-self: self-start;
 }
 
 article .description{
